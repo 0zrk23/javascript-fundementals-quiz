@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <!-- Section containing the metadata of the website -->
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/jass.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+
+    <!-- Section contianing the body of the website -->
+    <body>
+        <!-- headers of the page -->
+        <header>
+            <p id="view-scores">View High Scores</p>
+            <p id="timer">timer</p>
+        </header>
+        <!-- main section of the webpage -->
+        <main>
+            <!-- div containing what you see when you open the page -->
+            <div class="card" id="main">
+                <h1>Welcome!</h1>
+                <p>This is a JavaScript fundamentals quiz. Try to answer as many questions correctly within the time given. Score is based on answers correct and the time it took to complete.</p>
+                <button id="start-quiz">Take Quiz</button>
+            </div>
+            <!-- div containing the questions -->
+            <div class="card" id="quiz">
+                <h1 id="question">Question Place Holder</h1>
+                <button class="ans-button">place-holder</button>
+                <button class="ans-button">place-holder</button>
+                <button class="ans-button">place-holder</button>
+                <button class="ans-button">place-holder</button>
+                <hr>
+                <p id="answer">this is where the answer will be</p>
+                <button id="next">Next</button>
+            </div>
+            <!-- div containing the quiz completion -->
+            <div class="card" id="quiz-completion">
+                <h1>Nice Job!</h1>
+                <p>Your got (number) points!</p>
+                <!-- <p>Enter your name to record your score:</p> -->
+                <label for="initlas">Enter your name to record your score:</label><br>
+                <input type="text" id="initials" name="initials" placeholder="First Last">
+                <button id="submit-score">Submit</button>
+            </div>
+            <!-- div containing the high scores -->
+            <div class="card" id="high-scores">
+                <ul id="scores">
+                    <li>place-holder-score</li>
+                </ul>
+                <button id="goto-main">Back</button>
+                <button id="quiz-again">Take Quiz Again</button>
+            </div>
+        </main>
+        <!-- Javascript files and APIs -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+    </body> 
+</html>
