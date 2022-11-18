@@ -3,7 +3,7 @@
     <!-- Section containing the metadata of the website -->
     <head>
         <meta charset="UTF-8">
-        <title>JavaScript</title>
+        <title>JavaScript Fundementals Quiz</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/jass.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -13,45 +13,48 @@
     <body>
         <!-- headers of the page -->
         <header>
-            <p id="view-scores">View High Scores</p>
+            <p class="view-scores" id="vs-text">View High Scores</p>
             <p id="timer">Timer</p>
         </header>
         <!-- main section of the webpage -->
         <main>
             <!-- div containing what you see when you open the page -->
-            <div class="card flex-center" id="main">
+            <div class="card flex-center" id="welcome">
                 <h1>Welcome!</h1>
-                <p>This is a JavaScript fundamentals quiz. Try to answer as many questions correctly within the time given. Score is based on answers correct and the time it took to complete.</p>
-                <button id="start-quiz">Take Quiz</button>
+                <p>This is a JavaScript fundamentals quiz. Try to answer as many questions correctly within the time given. Score is based on correct answers and the time it took to complete. Press "Take Quiz" to get going :)</p>
+                <button class="start">Take Quiz</button>
             </div>
             <!-- div containing the questions -->
             <div class="card" id="quiz">
                 <h1 id="question">Question Place Holder</h1>
-                <button class="ans-button">place-holder</button><br>
-                <button class="ans-button">place-holder</button><br>
-                <button class="ans-button">place-holder</button><br>
-                <button class="ans-button">place-holder</button><br>
+                <div id="answer-buttons">
+                    <button class="ans-button">place-holder-1</button><br>
+                    <button class="ans-button">place-holder-2</button><br>
+                    <button class="ans-button">place-holder-3</button><br>
+                    <button class="ans-button">place-holder-4</button><br>
+                </div>
                 <hr>
                 <p id="answer">this is where the answer will be</p>
                 <!-- <button id="">Next</button> -->
             </div>
             <!-- div containing the quiz completion -->
             <div class="card" id="quiz-completion">
-                <h1>Nice Job!</h1>
-                <p>Your got (number) points!</p>
+                <h1 id="message">Nice Job!</h1>
+                <p>Your got <span id="user-score">(number)</span> points!</p>
                 <!-- <p>Enter your name to record your score:</p> -->
-                <label for="initlas">Enter your name to record your score:</label><br>
-                <input type="text" id="initials" name="initials" placeholder="First Last">
-                <button id="submit-score">Submit</button>
+                <label for="name">Enter your name to record your score:</label><br>
+                <input type="text" id="name" name="name" placeholder="No more than 15 characters">
+                <button class="view-scores" id="submit">Submit</button>
             </div>
             <!-- div containing the high scores -->
             <div class="card" id="high-scores">
-                <h1>High Scores</h1>
-                <ul id="scores">
+                <h1>Top 10 Scores</h1>
+                <ul id="score-display">
                     <li>place-holder-score</li>
                 </ul>
-                <button id="goto-main">Back</button>
-                <button id="quiz-again">Take Quiz Again</button>
+                <button id="back">Back</button>
+                <button id="clear-scores">Clear Scores</button>
+                <button class="start" id="take-again">Take Quiz</button>
             </div>
         </main>
         <!-- Javascript files and APIs -->

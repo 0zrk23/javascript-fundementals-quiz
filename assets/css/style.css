@@ -4,6 +4,7 @@
     --color3:#9d755c;
     --color4:#7e5d50;
     --color5:#4a3931;
+    --btn-width: 25.5%;
 }
 
 main{
@@ -33,7 +34,7 @@ li{
     width: max-content;
     padding: 0.5%;
     color: var(--color5);
-    font-weight:600;
+    font-weight:500;
 }
 
 h1{
@@ -57,6 +58,7 @@ label{
 input{
     font-size: 1.3rem;
     padding: 0.4rem 1.2rem;
+    width: 45%;
     color: var(--color5)
 }
 
@@ -96,13 +98,40 @@ button:hover{
     align-items: center; */
 }
 
-#main{
+#welcome{
     /* display: flex;
     flex-direction: column;
     align-items: center; */
     text-align: center;
 }
 
-#quiz{
-    
+.ans-button{
+    width: 50%;
+    text-align: left;
+}
+
+#quiz-completion{
+    display: relative;
+    margin: 3% 0 0 10%;
+}
+
+#high-scores{
+    margin: 3% 0 0 2%;
+}
+
+.view-scores{
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+#back{
+    width: var(--btn-width)
+}
+
+#clear-scores{
+    width: var(--btn-width)
+}
+
+#take-again{
+    width: var(--btn-width)
 }
